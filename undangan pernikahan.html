@@ -1,0 +1,104 @@
+<body>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <h3>The Wedding of</h3>
+    <h1 class="couples-title">Romeo & Juliet</h1>
+    <p>Kami mengundang Anda untuk berbagi kebahagiaan bersama kami</p>
+    <div class="event-date">Sabtu, 20 November 2027</div>
+  </header>
+
+  <!-- BRIDE & GROOM SECTION -->
+  <section>
+    <h2 class="section-title">Mempelai</h2>
+    <p style="color: var(--text-muted); font-size: 0.9rem;">
+      "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu istri-istri dari mejenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya."
+    </p>
+
+    <div class="couple-container">
+      <!-- Mempelai Pria -->
+      <div class="couple-card">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=300" alt="Romeo">
+        <h2>Romeo Montague</h2>
+        <p>Putra dari Bapak Montague <br>& Ibu Montague</p>
+      </div>
+
+      <div class="ampersand">&</div>
+
+      <!-- Mempelai Wanita -->
+      <div class="couple-card">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=300" alt="Juliet">
+        <h2>Juliet Capulet</h2>
+        <p>Putri dari Bapak Capulet <br>& Ibu Capulet</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENT DETAILS -->
+  <section style="background-color: rgba(235, 228, 218, 0.3);">
+    <h2 class="section-title">Waktu & Tempat</h2>
+
+    <div class="event-grid">
+      <!-- Akad Nikah -->
+      <div class="event-card">
+        <h3>Akad Nikah</h3>
+        <p><strong>Hari / Tanggal:</strong><br>Sabtu, 20 November 2027</p>
+        <p style="margin-top: 0.5rem;"><strong>Waktu:</strong><br>08.00 WIB - Selesai</p>
+        <p style="margin-top: 0.5rem;"><strong>Lokasi:</strong><br>Masjid Agung Kota<br>Jl. Mawar No. 123</p>
+        <a href="https://maps.google.com" target="_blank" class="btn-location">Google Maps</a>
+      </div>
+
+      <!-- Resepsi -->
+      <div class="event-card">
+        <h3>Resepsi</h3>
+        <p><strong>Hari / Tanggal:</strong><br>Sabtu, 20 November 2027</p>
+        <p style="margin-top: 0.5rem;"><strong>Waktu:</strong><br>11.00 WIB - 14.00 WIB</p>
+        <p style="margin-top: 0.5rem;"><strong>Lokasi:</strong><br>Grand Ballroom Hotel<br>Jl. Anggrek No. 45</p>
+        <a href="https://maps.google.com" target="_blank" class="btn-location">Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP SECTION -->
+  <section>
+    <h2 class="section-title">Konfirmasi Kehadiran</h2>
+    <form class="rsvp-form" onsubmit="alert('Terima kasih atas konfirmasinya!'); return false;">
+      <div class="form-group">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" placeholder="Masukkan nama Anda" required>
+      </div>
+
+      <div class="form-group">
+        <label for="kehadiran">Konfirmasi Kehadiran</label>
+        <select id="kehadiran" required>
+          <option value="">-- Pilih Kehadiran --</option>
+          <option value="hadir">Hadir</option>
+          <option value="tidak_hadir">Maaf, Tidak Bisa Hadir</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="jumlah">Jumlah Tamu</label>
+        <select id="jumlah">
+          <option value="1">1 Orang</option>
+          <option value="2">2 Orang</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="pesan">Pesan / Ucapan</label>
+        <textarea id="pesan" rows="4" placeholder="Berikan ucapan atau doa untuk mempelai..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Kirim Konfirmasi</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Terima kasih atas doa & restu Anda</p>
+    <p style="margin-top: 0.5rem;">Romeo & Juliet Wedding</p>
+  </footer>
+
+</body>
+</html>
